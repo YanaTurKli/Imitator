@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>f1</class>
+ <widget class="QMainWindow" name="f1">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>683</width>
+    <height>705</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>683</width>
+    <height>705</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>f1</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>681</width>
+      <height>681</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="10" column="2">
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QPushButton" name="pbInsertKom">
+         <property name="text">
+          <string>Сформировать комнаду</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pbClose">
+         <property name="text">
+          <string>Закрыть</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="6" column="2">
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QPushButton" name="pbInsertOb">
+         <property name="text">
+          <string>Добавить объект</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pbUpdObj">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>Изменить объект</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pbDelObj">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>Удалить объект</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="0" rowspan="10">
+      <widget class="QGraphicsView" name="graphicsView"/>
+     </item>
+     <item row="9" column="2">
+      <widget class="QTableWidget" name="tableCom">
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>70</number>
+       </attribute>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <column>
+        <property name="text">
+         <string>Номер</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Тип</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Отправлена</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Получена</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Обработана</string>
+        </property>
+       </column>
+       <item row="0" column="0">
+        <property name="text">
+         <string>1</string>
+        </property>
+       </item>
+       <item row="0" column="1">
+        <property name="text">
+         <string>Добавление РЛС</string>
+        </property>
+       </item>
+       <item row="0" column="2">
+        <property name="text">
+         <string>Да</string>
+        </property>
+       </item>
+       <item row="0" column="3">
+        <property name="text">
+         <string>Да</string>
+        </property>
+       </item>
+       <item row="0" column="4">
+        <property name="text">
+         <string>Да</string>
+        </property>
+       </item>
+       <item row="1" column="0">
+        <property name="text">
+         <string>2</string>
+        </property>
+       </item>
+       <item row="1" column="1">
+        <property name="text">
+         <string>Добавление объекта</string>
+        </property>
+       </item>
+       <item row="1" column="2">
+        <property name="text">
+         <string>Да</string>
+        </property>
+       </item>
+       <item row="1" column="3">
+        <property name="text">
+         <string>Да</string>
+        </property>
+       </item>
+       <item row="1" column="4">
+        <property name="text">
+         <string>Нет</string>
+        </property>
+       </item>
+       <item row="2" column="0">
+        <property name="text">
+         <string>3</string>
+        </property>
+       </item>
+       <item row="2" column="1">
+        <property name="text">
+         <string>Изменение состояния</string>
+        </property>
+       </item>
+       <item row="2" column="2">
+        <property name="text">
+         <string>Да</string>
+        </property>
+       </item>
+       <item row="2" column="3">
+        <property name="text">
+         <string>Да</string>
+        </property>
+       </item>
+       <item row="2" column="4">
+        <property name="text">
+         <string>Нет</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QLabel" name="label_34">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Обстановка</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QPushButton" name="pbInsertRLS">
+         <property name="text">
+          <string>Добавить РЛС</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pbUpdRLS">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>Изменить РЛС</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pbDelRLS">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>Удалить РЛС</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLabel" name="label_32">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string> РЛС</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="QTableWidget" name="tableObject">
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>70</number>
+       </attribute>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <column>
+        <property name="text">
+         <string>Номер</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Принадл</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Тип</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Класс</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>X</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Y</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Z</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>P</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>V</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>K</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Vh</string>
+        </property>
+       </column>
+       <item row="0" column="0">
+        <property name="text">
+         <string>12</string>
+        </property>
+       </item>
+       <item row="0" column="1">
+        <property name="text">
+         <string>Свой</string>
+        </property>
+       </item>
+       <item row="0" column="2">
+        <property name="text">
+         <string>Воздушный</string>
+        </property>
+       </item>
+       <item row="0" column="3">
+        <property name="text">
+         <string>Вертолет</string>
+        </property>
+       </item>
+       <item row="0" column="4">
+        <property name="text">
+         <string>123</string>
+        </property>
+       </item>
+       <item row="0" column="5">
+        <property name="text">
+         <string>22</string>
+        </property>
+       </item>
+       <item row="0" column="6">
+        <property name="text">
+         <string>111</string>
+        </property>
+       </item>
+       <item row="0" column="7">
+        <property name="text">
+         <string>34</string>
+        </property>
+       </item>
+       <item row="1" column="0">
+        <property name="text">
+         <string>34</string>
+        </property>
+       </item>
+       <item row="1" column="1">
+        <property name="text">
+         <string>Чужой</string>
+        </property>
+       </item>
+       <item row="1" column="2">
+        <property name="text">
+         <string>Воздушный</string>
+        </property>
+       </item>
+       <item row="1" column="3">
+        <property name="text">
+         <string>Самолет</string>
+        </property>
+       </item>
+       <item row="1" column="4">
+        <property name="text">
+         <string>44</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="7" column="2">
+      <widget class="QLabel" name="label_35">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Команды</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_33">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Тип РЛС</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="cmbType">
+         <item>
+          <property name="text">
+           <string>Тип1</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Тип2</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Тип3</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_36">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Номер РЛС</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="cmbRLS">
+         <item>
+          <property name="text">
+           <string>123</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>245</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>355</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="2" column="2">
+      <widget class="QTableWidget" name="tableRLS">
+       <property name="showGrid">
+        <bool>true</bool>
+       </property>
+       <property name="sortingEnabled">
+        <bool>false</bool>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <attribute name="horizontalHeaderMinimumSectionSize">
+        <number>20</number>
+       </attribute>
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>60</number>
+       </attribute>
+       <attribute name="verticalHeaderMinimumSectionSize">
+        <number>20</number>
+       </attribute>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <column>
+        <property name="text">
+         <string>Сектор</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Статус</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Dmax</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Dmin</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Hmax</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Hmin</string>
+        </property>
+       </column>
+       <item row="0" column="0">
+        <property name="text">
+         <string>1</string>
+        </property>
+       </item>
+       <item row="0" column="1">
+        <property name="text">
+         <string>Работает</string>
+        </property>
+       </item>
+       <item row="0" column="2">
+        <property name="text">
+         <string>355</string>
+        </property>
+       </item>
+       <item row="0" column="3">
+        <property name="text">
+         <string>200</string>
+        </property>
+       </item>
+       <item row="0" column="4">
+        <property name="text">
+         <string>100</string>
+        </property>
+       </item>
+       <item row="0" column="5">
+        <property name="text">
+         <string>50</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
